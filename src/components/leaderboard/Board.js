@@ -18,18 +18,20 @@ export default function Board() {
     });;
 
   return (
-    <div className="board">
+    <div className='container'>
+     <div className="board">
+      
         <br/>
         <h1 className='leaderboard text-light onClick={notify}'>Robocode Leaderboard!</h1>
 
         <Profiles Leaderboard={Leaderboard}></Profiles>
 
         <div>
-        <button className='popupButton' onClick={notify}>!</button>
-        <ToastContainer
-            />
+          <button className='popupButton' onClick={notify}>!</button>
+          <ToastContainer/>
         </div>
 
+      </div>
     </div>
   )
 }

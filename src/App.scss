@@ -1,0 +1,131 @@
+@import "./variables.modules";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import "./variables.modules";
+
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1.5vh;
+    width: 100%;
+    height: 100%;
+    color: $dark;
+    background-color: $white;
+    box-sizing: border-box;
+}
+
+li {
+    color: $dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+  flex: 1;
+  background-color: #0D0208;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  color: $dark;
+}
+
+.dark {
+  background-color: black;
+  color: $white;
+  transition: all 400ms;
+
+  a, i, li {
+    color: $white;
+    transition: color 400ms;
+  }
+
+  a:visited {
+    color: $white;
+  }
+
+  footer {
+    color: $white;
+  }
+}
+
+.light {
+  background-color: $white;
+  color: $dark;
+  transition: all 400ms;
+}
+
+
+//.dark {
+//  background-color: $dark;
+//  color: $white;
+//  transition: all 400ms;
+//  a, i {
+//    color: $white;
+//    transition: color 400ms;
+//  }
+//  a:visited {
+//    color: $white;
+//  }
+//  i:hover {
+//    color: $purple;
+//  }
+//  footer {
+//    color: $white;
+//  }
+//
+//  nav {
+//    background-color: $dark;
+//    transition: $transition;
+//  }
+//
+//  div > section > div:first-child {
+//    background-color: #575e64;
+//    i:first-child {
+//      color: $red;
+//    }
+//    i:nth-child(2) {
+//      color: $yellow;
+//    }
+//    i:nth-child(3) {
+//      color: $green;
+//    }
+//  }
+//
+//
+//  & > div div {
+//    i {
+//      color: white;
+//    }
+//  }
+//}
